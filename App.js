@@ -35,6 +35,15 @@ app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "/"));
 });
 
+app.get("/community", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/community.html"))
+});
+
+app.get("/community1", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/community1.html"))
+});
+
+
 // -- URL NAVIGATION -- //
 //depending on what url extension the user navigates to, send them the respective html file.
 
