@@ -36,11 +36,11 @@ app.get("/", function (req, res) {
 });
 
 app.get("/community", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/community.html"))
+    res.sendFile(path.join(__dirname, "/public/front_page.html"))
 });
 
 app.get("/community1", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/community1.html"))
+    res.sendFile(path.join(__dirname, "/public/community0.html"))
 });
 
 
