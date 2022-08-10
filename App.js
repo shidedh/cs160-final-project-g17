@@ -46,6 +46,9 @@ app.get("/discover", function (req, res) {
 app.get("/followed", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/followed.html"))
 });
+app.get("/candidates", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/candidates.html"))
+});
 
 
 // -- URL NAVIGATION -- //

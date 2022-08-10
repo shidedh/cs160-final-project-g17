@@ -1,21 +1,38 @@
 <!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/1301d25161.js" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/java" href="/css/main.css" />
+
+
+
+
 </head>
 
 <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
 
-<body style="font-family:Verdana;">
-    <nav class = "navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+<body style="font-family:Verdana;" style="margin:10px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  py-2">
         <div class="navbar-header input-group">
             <span class="input-group-text border-0" id="search-addon">
                 <!--i class="fa-solid fa-binoculars fa-2xl"></i-->
@@ -25,48 +42,218 @@
         </div>
     </nav>
 
+    <div class="card" style="margin: 10px;">
+        <div class="card-header text-center">
+            Special elections to the 117th Congress, 2021-2022
+        </div>
+        <div class="card-body">
+            <table class="table table-strap table-sm text-center">
+                <thead>
+                    <tr>
+                        <th scope="col"> # </th>
+                        <th scope="col">Candidate</th>
+                        <th scope="col">%</th>
+                        <th scope="col">Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-1"> 1</td>
+                        <td class="col"> Connie Conway </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35.2%;"
+                                    aria-valuenow="35.2" aria-valuemin="0" aria-valuemax="100">35.2%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">30,248 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 2</td>
+                        <td class="col"> Lourin Hubba </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 19.4%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">19.4%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">16,636 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 3</td>
+                        <td class="col"> Matt Stoll </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 16.2%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">16.2%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">13,882 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 4</td>
+                        <td class="col"> Eric Garcia </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 14.4%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">14.4%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">12,410 </td>
+                    </tr>
+                </tbody>
+
+                <caption>Election date: April 5, 2022
+                </caption>
+
+            </table>
+        </div>
+        <a href="#" class="btn btn-primary">More</a>
+    </div>
+
+
+    <div class="card text center" style="margin: 10px;">
+        <div class="card-body">
+            <h5 class="card-title">Voting Infomation</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Find out where you can vote?</h6>
+            <p class="card-text">Get the address of your local vote center.</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="address">Which county are you located at: </label>
+                    <input type="text" class="form-control" id="address" placeholder="county name" value="Contra Costa">
+                    <button class="btn btn-primary mb-2" type="button" data-toggle="collapse" data-target="#search"
+                        aria-expanded="false" aria-controls="search">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="collapse well" id="search">555 Escobar Street<br>
+            P.O. Box 271<br>
+            Martinez, CA 94553<br>
+            (925) 335-7800<br>
+            Toll Free (Domestic) (877) 335-7802<br>
+            <a href="https://www.cocovote.us/election/california-gubernatorial-recall-election/#Election">Polling Place
+                Look-up</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div>
+        <h4>
+            More Information:
+        </h4>
+
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#check-registeration"
+            aria-expanded="false" aria-controls="check-registeration">Check Your Registration <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+        <div class="collapse" id="check-registeration">
+            <div class="card card-body">
+                <iframe src="https://verify.vote.org/?partner=111111&campaign=free-tools" width="100%" marginheight="0"
+                    frameborder="0" id="frame3" scrollable="no"></iframe>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#register"
+            aria-expanded="false" aria-controls="register">Register to Vote <svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
+        <div class="collapse" id="register">
+            <div class="card card-body">
+                <iframe src="https://register.vote.org/?partner=111111&campaign=free-tools" width="100%"
+                    marginheight="0" frameborder="0" id="frame1" scrollable="no"></iframe>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#vote-mail"
+            aria-expanded="false" aria-controls="vote-mail">Vote by Mail <svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
+        <div class="collapse" id="vote-mail">
+            <div class="card card-body">
+                <iframe src="https://absentee.vote.org/?partner=111111&campaign=free-tools" width="100%"
+                    marginheight="0" frameborder="0" id="frame2" scrollable="no"></iframe>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reminder"
+            aria-expanded="false" aria-controls="reminder ">Get Election Reminder <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
+        <div class="collapse" id="reminder">
+            <div class="card card-body">
+                <iframe src="https://reminders.vote.org/?partner=111111&campaign=free-tools" width="100%"
+                    marginheight="0" frameborder="0" id="frame4" scrollable="no"></iframe>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pledge" aria-expanded="false"
+            aria-controls="pledge">Pledge to Register <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
+
+        <div class="collapse" id="pledge">
+            <div class="card card-body">
+                <iframe src="https://pledge.vote.org/?partner=111111&campaign=free-tools" width="100%" marginheight="0"
+                    frameborder="0" id="frame5" scrollable="no"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="row">
-    <nav class = "navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-            <div class ="col d-flex justify-content-center">
-                <p> Home <p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+            <div class="col d-flex justify-content-center">
+                <a href="/">Home</a>
+
             </div>
-            <div class ="col d-flex justify-content-center border-start">
-                <p> News <p>
+            <div class="col d-flex justify-content-center border-start">
+                <p> News
+                <p>
             </div>
-            <div class ="col d-flex justify-content-center border-start">
-                <p> Candidates <p>
+            <div class="col d-flex justify-content-center border-start">
+                <a href="/candidates">Candidates</a>
             </div>
-            <div class ="col d-flex justify-content-center border-start">
+            <div class="col d-flex justify-content-center border-start">
                 <a href="/community">Community</a>
             </div>
-        <!--/div-->
-    </nav>
+            <!--/div-->
+        </nav>
     </div>
     <div class="container-fluid">
         <br>
-        <p>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus nibh, vehicula id felis ut, faucibus scelerisque nunc. Sed commodo arcu vitae dictum placerat. Sed lacinia vestibulum sagittis. Sed cursus ex eu condimentum malesuada. Nullam nec ante dapibus, interdum arcu quis, ultricies felis. Donec tincidunt at velit id laoreet. Integer venenatis mauris in dolor finibus vulputate.
-
-Maecenas quis tempor purus, ac tincidunt enim. Sed a accumsan mi. Vestibulum malesuada in ipsum at laoreet. Praesent odio massa, varius ut vehicula et, mattis in felis. Donec elementum tortor quis nulla tempus luctus. Fusce sit amet turpis vitae augue pulvinar suscipit egestas at felis. In sagittis ante lectus, quis suscipit nunc consectetur a. Nunc in tellus varius, condimentum est non, iaculis ante. Integer odio eros, laoreet a aliquet id, ultricies vel massa. Fusce vitae elit risus. Proin a sem diam. Mauris in libero vel magna vestibulum porta.
-
-Donec finibus massa in erat placerat vehicula. Suspendisse rhoncus consequat mollis. Proin condimentum eleifend dignissim. Sed viverra elit erat, vel finibus lacus consectetur at. Fusce tincidunt semper metus, vitae euismod risus congue eget. Donec dignissim dolor vitae cursus ultricies. Etiam eget tortor in neque varius tristique ac quis lectus. Donec sed turpis diam.
-
-Nulla ac lobortis diam, eget vulputate dolor. Suspendisse cursus felis at odio pellentesque, nec tempor neque pharetra. Mauris dictum leo et elit volutpat, molestie tincidunt metus ultrices. Vestibulum lectus urna, hendrerit ut nisl dictum, vestibulum gravida sapien. Maecenas et dui vitae odio feugiat consequat quis ut ipsum. Aliquam scelerisque consequat risus, vitae venenatis orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sodales mauris nec sodales auctor. Nulla vitae fermentum nisl.
-
-Vestibulum mauris neque, gravida nec suscipit et, blandit vel nisl. Donec mauris erat, congue rutrum ligula nec, venenatis vulputate mi. Duis quis turpis hendrerit, viverra mi ut, faucibus risus. Sed et lacus dapibus, sollicitudin nunc ut, vehicula diam. Phasellus nec augue tristique, accumsan leo ac, interdum neque. Proin at elit eget leo porta pharetra. Praesent arcu leo, finibus in dui a, blandit aliquam magna. Phasellus ipsum enim, ornare et dui ac, consectetur hendrerit mauris. Aenean nec ante ac tellus ultrices rutrum eget at ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Duis turpis magna, pulvinar non auctor vel, tempus a tortor. Mauris vitae risus in dui maximus porta nec et orci. Praesent scelerisque augue malesuada tortor mollis, molestie viverra enim rutrum. Integer lorem risus, vestibulum vel bibendum vitae, lacinia quis libero. Aliquam lacinia non urna sed mollis. Integer in elit a odio interdum elementum in vel tellus. Donec bibendum vel mi vitae laoreet. Aliquam tempor vitae odio vitae condimentum. Cras vitae orci accumsan, euismod quam eget, molestie dui. Donec consequat sem vitae dui sollicitudin, in vestibulum enim molestie. Proin nisl ligula, tristique a porta eget, varius vel eros.
-
-Curabitur finibus aliquet augue, vel viverra nunc. Etiam at dolor sit amet elit sagittis pharetra. Integer at ante arcu. In hac habitasse platea dictumst. Nulla non lobortis mauris, at ullamcorper eros. Proin arcu risus, facilisis mollis sagittis et, sollicitudin laoreet leo. Proin finibus mauris vel hendrerit lobortis. Aenean a erat tortor. Nunc varius pretium cursus.
-
-Integer sodales porta nisi, et tristique urna vestibulum id. Quisque tempus tellus in ante bibendum, vel convallis odio fermentum. Suspendisse dictum, purus vitae semper dignissim, nulla risus consectetur magna, finibus lacinia ex nisi at ante. Duis ultricies tortor eu pellentesque sodales. Aenean malesuada ligula finibus nisl aliquam, non faucibus ipsum blandit. Suspendisse id rutrum nisi. Quisque quis tellus et nulla feugiat mattis. Phasellus fringilla condimentum consectetur. Cras ullamcorper diam erat. Phasellus arcu libero, tincidunt at purus id, varius interdum orci. Proin hendrerit vitae enim sed porttitor. Sed sapien nisl, fermentum et lacus at, feugiat tincidunt eros. Sed et aliquet leo, non lobortis diam. Vivamus arcu mi, sodales vitae accumsan ut, gravida sed sapien.
-
-Phasellus semper urna sed ante congue, eu venenatis nibh lobortis. Aliquam erat volutpat. Vestibulum pulvinar quis orci ac iaculis. Aliquam auctor fringilla metus a mattis. Etiam tempor, diam id vulputate fringilla, ligula justo commodo orci, varius maximus leo urna vel libero. Quisque tincidunt et arcu vel consequat. Mauris quis consequat dui. Suspendisse vulputate quam ac augue ornare mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris mollis ipsum sed orci bibendum tincidunt. Nam a laoreet metus. Maecenas efficitur lectus massa, sit amet vehicula nisl pharetra non. Maecenas venenatis, enim eu tempus feugiat, ante orci cursus lacus, sed vulputate orci tortor vel ante. Maecenas ut elementum augue, nec vehicula est.
-
-Donec mauris mi, luctus vitae sollicitudin interdum, laoreet nec neque. Sed eleifend rhoncus augue, et venenatis augue consequat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec ligula elementum, pharetra tortor sed, ultrices turpis. Aenean maximus ipsum accumsan, efficitur tortor et, commodo nisl. Etiam in dui sit amet justo venenatis facilisis lobortis ut sem. Aenean porttitor nibh vel erat interdum, id maximus mauris porttitor. Proin euismod pharetra elit at ultricies. Ut ac tristique leo. Sed fermentum pharetra mattis. Donec ante mauris, auctor ut mi nec, eleifend pharetra ligula. Fusce lorem mauris, venenatis vel turpis sed, consectetur placerat risus. Nam consectetur eros dapibus, eleifend lorem sed, consequat neque. Suspendisse vitae neque mauris. Duis ligula erat, consequat non massa vel, pretium aliquam sem. Nunc efficitur arcu urna, ac fringilla elit rutrum sit amet.
-        </p>
-        <br><br>
     </div>
+
+
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.5.3/iframeResizer.min.js"></script>
+    <script type="text/javascript">iFrameResize({ log: true, checkOrigin: false });</script>
+
+
+
 </body>
+
 </html>
