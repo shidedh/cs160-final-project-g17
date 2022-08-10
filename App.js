@@ -34,13 +34,17 @@ app.use(express.static(publicPath));  //tell express to use that folder
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "/"));
 });
-
 app.get("/community", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/front_page.html"))
 });
-
-app.get("/community1", function (req, res) {
+app.get("/community0", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/community0.html"))
+});
+app.get("/discover", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/discover.html"))
+});
+app.get("/followed", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/followed.html"))
 });
 
 
