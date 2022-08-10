@@ -31,7 +31,7 @@
 
 <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
 
-<body style="font-family:Verdana;">
+<body style="font-family:Verdana;" style="margin:10px;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light  py-2">
         <div class="navbar-header input-group">
             <span class="input-group-text border-0" id="search-addon">
@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <div class="card">
+    <div class="card" style="margin: 10px;">
         <div class="card-header text-center">
             Special elections to the 117th Congress, 2021-2022
         </div>
@@ -111,7 +111,8 @@
         <a href="#" class="btn btn-primary">More</a>
     </div>
 
-    <div class="card text center" style="width: 30rem;">
+
+    <div class="card text center" style="margin: 10px;">
         <div class="card-body">
             <h5 class="card-title">Voting Infomation</h5>
             <h6 class="card-subtitle mb-2 text-muted">Find out where you can vote?</h6>
@@ -122,7 +123,7 @@
                     <label for="address">Which county are you located at: </label>
                     <input type="text" class="form-control" id="address" placeholder="county name" value="Contra Costa">
                     <button class="btn btn-primary mb-2" type="button" data-toggle="collapse" data-target="#search"
-                aria-expanded="false" aria-controls="search">Search</button>
+                        aria-expanded="false" aria-controls="search">Search</button>
                 </div>
             </form>
         </div>
@@ -131,10 +132,12 @@
             Martinez, CA 94553<br>
             (925) 335-7800<br>
             Toll Free (Domestic) (877) 335-7802<br>
-            <a href="https://www.cocovote.us/election/california-gubernatorial-recall-election/#Election">Polling Place Look-up</a>
-            
+            <a href="https://www.cocovote.us/election/california-gubernatorial-recall-election/#Election">Polling Place
+                Look-up</a>
+
         </div>
     </div>
+
 
 
 
@@ -145,42 +148,72 @@
             More Information:
         </h4>
 
-        <p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#check-registeration"
-                aria-expanded="false" aria-controls="check-registeration">Check Your Registration</button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#register"
-                aria-expanded="false" aria-controls="register">Register to Vote</button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#vote-mail"
-                aria-expanded="false" aria-controls="vote-mail">Vote by Mail</button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reminder"
-                aria-expanded="false" aria-controls="reminder ">Get Election Reminder</button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pledge"
-                aria-expanded="false" aria-controls="pledge">Pledge to Register</button>
-        </p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#check-registeration"
+            aria-expanded="false" aria-controls="check-registeration">Check Your Registration <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
         <div class="collapse" id="check-registeration">
             <div class="card card-body">
                 <iframe src="https://verify.vote.org/?partner=111111&campaign=free-tools" width="100%" marginheight="0"
                     frameborder="0" id="frame3" scrollable="no"></iframe>
             </div>
         </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#register"
+            aria-expanded="false" aria-controls="register">Register to Vote <svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
         <div class="collapse" id="register">
             <div class="card card-body">
                 <iframe src="https://register.vote.org/?partner=111111&campaign=free-tools" width="100%"
                     marginheight="0" frameborder="0" id="frame1" scrollable="no"></iframe>
             </div>
         </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#vote-mail"
+            aria-expanded="false" aria-controls="vote-mail">Vote by Mail <svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
         <div class="collapse" id="vote-mail">
             <div class="card card-body">
                 <iframe src="https://absentee.vote.org/?partner=111111&campaign=free-tools" width="100%"
                     marginheight="0" frameborder="0" id="frame2" scrollable="no"></iframe>
             </div>
         </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reminder"
+            aria-expanded="false" aria-controls="reminder ">Get Election Reminder <svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
         <div class="collapse" id="reminder">
             <div class="card card-body">
                 <iframe src="https://reminders.vote.org/?partner=111111&campaign=free-tools" width="100%"
                     marginheight="0" frameborder="0" id="frame4" scrollable="no"></iframe>
             </div>
         </div>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pledge" aria-expanded="false"
+            aria-controls="pledge">Pledge to Register <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg></button>
+        <br>
+
+
         <div class="collapse" id="pledge">
             <div class="card card-body">
                 <iframe src="https://pledge.vote.org/?partner=111111&campaign=free-tools" width="100%" marginheight="0"
@@ -190,29 +223,7 @@
     </div>
 
 
-    <div>
-        <h4>
-            More Information:
-        </h4>
 
-        <button id="check-btn" type="button" class="btn btn-primary btn-sm">CHECK YOUR REGISTRATION -></button>
-        <br>
-        <button type="button" class="btn btn-primary btn-sm">REGISTER TO VOTE -></button>
-        <br>
-        <button type="button" class="btn btn-primary btn-sm">VOTE BY MAIL -></button>
-        <br>
-        <button type="button" class="btn btn-primary btn-sm">GET ELECTION REMINDERS -></button>
-        <br>
-        <button type="button" class="btn btn-primary btn-sm">PLEDGE TO REGISTER -></button>
-        <br>
-
-
-
-
-
-
-
-    </div>
     <div class="row">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
             <div class="col d-flex justify-content-center">
@@ -235,15 +246,6 @@
     </div>
     <div class="container-fluid">
         <br>
-        <p>
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacus nibh, vehicula id felis ut, faucibus
-            scelerisque nunc. Sed commodo arcu vitae dictum placerat. Sed lacinia vestibulum sagittis. Sed cursus ex eu
-            condimentum malesuada. Nullam nec ante dapibus, interdum arcu quis, ultricies felis. Donec tincidunt at
-            velit id laoreet. Integer venenatis mauris in dolor finibus vulputate.
-
-        </p>
-        <br><br>
     </div>
 
 
