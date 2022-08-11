@@ -2,14 +2,12 @@
 PROJECT 2
 Template code for CS160 Summer 2022
 Prepared by Shm Garanganao Almeda
-
 Code referenced from:
 CS160 Summer 2021
 https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module"
 https://expressjs.com/en/starter/hello-world.html
 https://codeforgeek.com/render-html-file-expressjs/
 https://stackoverflow.com/questions/32257736/app-use-express-serve-multiple-html
-
 Photo Credits:
 Bunny by Satyabratasm on Unsplash <https://unsplash.com/photos/u_kMWN-BWyU>
 */
@@ -37,6 +35,9 @@ app.get("/", function (req, res) {
 app.get("/community", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/front_page.html"))
 });
+app.get("/news", function (req, res) {
+    res.sendFile(path.join(__dirname, "/public/news.html"))
+});
 app.get("/community0", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/community0.html"))
 });
@@ -48,9 +49,6 @@ app.get("/followed", function (req, res) {
 });
 app.get("/candidates", function (req, res) {
     res.sendFile(path.join(__dirname, "/public/candidates.html"))
-});
-app.get("/news", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/news.html"))
 });
 
 
