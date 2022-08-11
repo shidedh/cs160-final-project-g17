@@ -1,0 +1,298 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1301d25161.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1301d25161.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+
+    <style>
+        .background-canvas {
+            height: 1180px;
+            width: 820px;
+            background-color: #E4D7E5;
+        }
+
+        .blocksquare {
+            height: 250px;
+            width: 700px;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            position: relative;
+            left: 50px;
+
+
+        }
+
+        .blocksquare2 {
+            height: 200px;
+            width: 700px;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            position: relative;
+            left: 50px;
+
+
+        }
+
+        .blocksquare3 {
+            height: 500px;
+            width: 700px;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            position: relative;
+            left: 50px;
+
+
+        }
+
+        .paddingtop {
+            height: 30px;
+            width: 500px;
+            background-color: #E4D7E5;
+            justify-content: center;
+
+        }
+
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .ellipse {
+            width: 100px;
+            height: 30px;
+            border-radius: 40%;
+            font-size: 20px;
+            display: table-cell;
+            line-height: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background: #D9D9D9;
+            position: relative;
+            left: 40px;
+        }
+
+        .ellipse2 {
+            width: 120px;
+            height: 30px;
+            border-radius: 40%;
+            font-size: 18px;
+            display: table-cell;
+            line-height: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background: #D9D9D9;
+            position: relative;
+            left: 100px;
+        }
+
+        .details {
+            width: 150px;
+            height: 30px;
+            font-size: 10px;
+            /* display: table-cell; */
+            line-height: 20px;
+            color: #000000;
+            background: #E4D7E5;
+            position: relative;
+            top: 40px;
+            left: 250px;
+        }
+
+        .viewdetails {
+            font-size: 25px;
+            color: #000000;
+            position: relative;
+            top: 6px;
+            left: 50px;
+        }
+
+        .paddingmid {
+            
+            height: 20px;
+            width: 500px;
+            background-color: #E4D7E5;
+            justify-content: center;
+
+        }
+
+        .paddingbot {
+            height: 20px;
+            width: 800px;
+            background-color: #E4D7E5;
+            /* justify-content: center; */
+
+        }
+        
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<!-- TOP SEARCH BAR -->
+
+<body style="background-color:#E4D7E5;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+        <div class="navbar-header input-group">
+            <span class="input-group-text border-0" id="search-addon">
+                <!--i class="fa-solid fa-binoculars fa-2xl"></i-->
+                <i class="fas fa-search fa-2xl"></i>
+            </span>
+            <input type="search" class="form-control border-0 rounded-0" placeholder="" aria-label="Search">
+        </div>
+    </nav>
+
+    <!-- BOTTOM NAV BAR -->
+
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+            <div class="col d-flex justify-content-center">
+                <a href="/">Home</a>
+
+            </div>
+            <div class="col d-flex justify-content-center border-start">
+                <a href="/news">News</a>
+                <p>
+            </div>
+            <div class="col d-flex justify-content-center border-start">
+                <a href="/candidates.html">Candidates</a>
+            </div>
+            <div class="col d-flex justify-content-center border-start">
+                <a href="/front_page.html">Community</a>
+            </div>
+            <!--/div-->
+        </nav>
+    </div>
+
+    <!-- BLOCKS -->
+    <!--  -->
+    <div class="paddingtop"></div>
+    <div class="blocksquare">
+        <div style="padding-left:20px; padding-top:20px;">
+        <img src="https://aflcio.org/sites/default/files/scorecard/A000372.jpg" alt="rickallen" width="190px"
+            height="190px" style="float:left;">
+        
+        </div>
+        <h1 style="text-align: center;">Rick Allen</h1>
+        <h5 style="text-align: center;">Party Affiliation: Republican </h5>
+        <h5 style="text-align: center;">Legislative career: Georgia State Representative (2015)
+        <h5 style="text-align: center;">Age: 46  </h5>
+        <h5 style="text-align: center;">Gender: Male </h5>
+   
+    </div>
+    <div class="paddingmid"></div>
+    <div class="blocksquare2">
+        <div style="padding-left:20px; padding-top:20px;">
+        
+        <h1 style="text-align: left;">Profile</h1>
+        <h5 style="text-align: left;">Richard Wayne Allen is an American politician who has served as the U.S. representative for Georgia's 12th congressional district since 2015. He is a member of the Republican Party... 
+            [expand] </h5>
+        </div>
+    </div>
+    
+    <div class="paddingbot"></div>
+<div class="blocksquare3">
+    <div style="padding-left:20px; padding-top:20px;">
+    <h1 style="text-align: left;">Elections</h1>
+    </div>
+    <div class="card" style="margin: 10px;">
+        <div class="card-header text-center">
+            Special elections to the 117th Congress, 2021-2022
+        </div>
+        <div class="card-body">
+            <table class="table table-strap table-sm text-center">
+                <thead>
+                    <tr>
+                        <th scope="col"> # </th>
+                        <th scope="col">Candidate</th>
+                        <th scope="col">%</th>
+                        <th scope="col">Votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-1"> 1</td>
+                        <td class="col"> Rick Allen </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35.2%;"
+                                    aria-valuenow="35.2" aria-valuemin="0" aria-valuemax="100">35.2%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">30,248 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 2</td>
+                        <td class="col"> John Stevens </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar .bg-primary" role="progressbar" style="width: 19.4%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">19.4%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">16,636 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 3</td>
+                        <td class="col"> Matt Stoll </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 16.2%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">16.2%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">13,882 </td>
+                    </tr>
+                    <tr>
+                        <td class="col-1"> 4</td>
+                        <td class="col"> David Smith </td>
+                        <td class="col-3">
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 14.4%;"
+                                    aria-valuenow="19.4" aria-valuemin="0" aria-valuemax="100">14.4%</div>
+                            </div>
+                        </td>
+                        <td class="col-3">12,410 </td>
+                    </tr>
+                </tbody>
+
+                <caption>Election date: April 5, 2020
+                </caption>
+
+            </table>
+        </div>
+        <a href="#" class="btn btn-light">More</a>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
