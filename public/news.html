@@ -16,6 +16,7 @@
         font-variation-settings: 'OPSZ' 25;
     }
 </style>
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <!-- you can also specify styles straight in html! Let's use Verdana on this page.-->
@@ -32,21 +33,22 @@
     </nav>
     
     <div class="row">
-    <nav class = "navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
-            <div class ="col d-flex justify-content-center">
-                <p> Home <p>
-            </div>
-            <div class ="col d-flex justify-content-center border-start">
-                <p> News <p>
-            </div>
-            <div class ="col d-flex justify-content-center border-start">
-                <p> Candidates <p>
-            </div>
-            <div class ="col d-flex justify-content-center border-start">
-                <p> Community <p>
-            </div>
-        <!--/div-->
-    </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+          <div class="col d-flex justify-content-center">
+              <a href="/">Home</a>
+
+          </div>
+          <div class="col d-flex justify-content-center border-start">
+              <a href="/news">News</a>
+              <p>
+          </div>
+          <div class="col d-flex justify-content-center border-start">
+              <a href="/candidates.html">Candidates</a>
+          </div>
+          <div class="col d-flex justify-content-center border-start">
+              <a href="/front_page.html">Community</a>
+          </div>
+      </nav>
     </div>
     <div class="container">
        <br><br><br>
@@ -107,12 +109,12 @@
                 </div>
                 <div id="collapse1" class="collapse bg-secondary" data-bs-parent="#accordion">
                     <div class="card-body">
-                    <p class="text-light"><a href="https://www.latimes.com/politics/story/2022-05-09/california-2022-primary-election-heres-what-to-know" class="text-light a-collapse1"  target="_blank">LA Times:</a> What’s on the ballot in California’s 2022 primary election?</p>
-                    <p class="text-light"><a href="https://www.cnn.com/election/2022/results/california/special-election/us-house-district-22" class="text-light a-collapse1"  target="_blank">CNN:</a> House District 22: California Special Election Results</p>
-                    <p class="text-light"><a href="https://ballotpedia.org/California%27s_22nd_Congressional_District_special_election,_2022" class="text-light a-collapse1"  target="_blank">ballotpedia:</a> BallotPedia: California’s 22nd Congressional District special election, 2022</p>
-                    <p class="text-light"><a href="https://californiaglobe.com/articles/former-assembly-leader-connie-conway-dwr-manager-lourin-hubbard-to-faceoff-in-race-for-22nd-congressional-seat/" class="text-light a-collapse1"  target="_blank">CaliforniaGlobe:</a>Former Assembly Leader Connie Conway, DWR Manager Lourin Hubbard To Faceoff in Race For 22nd Congressional Seat</p>
-                    <p class="text-light"><a href="https://www.washingtonpost.com/elections/2022/04/05/california-house-election/" class="text-light a-collapse1"  target="_blank">Washington Post:</a> June runoff set for House seat in California once held by Devin Nunes</p>
-                    <p class="text-light"><a href="https://www.usnews.com/news/best-states/california/articles/2022-04-08/democrat-lourin-hubbard-advances-to-runoff-election-in-californias-22nd-congressional-district" class="text-light a-collapse1"  target="_blank">US News:</a> Democrat Lourin Hubbard Advances to Runoff Election in California's 22nd Congressional District</p>
+                    <p class="text-light"><a href="https://www.latimes.com/politics/story/2022-05-09/california-2022-primary-election-heres-what-to-know" class="text-light"  target="_blank">LA Times:</a> What’s on the ballot in California’s 2022 primary election?</p>
+                    <p class="text-light"><a href="https://www.cnn.com/election/2022/results/california/special-election/us-house-district-22" class="text-light"  target="_blank">CNN:</a> House District 22: California Special Election Results</p>
+                    <p class="text-light"><a href="https://ballotpedia.org/California%27s_22nd_Congressional_District_special_election,_2022" class="text-light"  target="_blank">ballotpedia:</a> BallotPedia: California’s 22nd Congressional District special election, 2022</p>
+                    <p class="text-light"><a href="https://californiaglobe.com/articles/former-assembly-leader-connie-conway-dwr-manager-lourin-hubbard-to-faceoff-in-race-for-22nd-congressional-seat/" class="text-light"  target="_blank">CaliforniaGlobe:</a>Former Assembly Leader Connie Conway, DWR Manager Lourin Hubbard To Faceoff in Race For 22nd Congressional Seat</p>
+                    <p class="text-light"><a href="https://www.washingtonpost.com/elections/2022/04/05/california-house-election/" class="text-light"  target="_blank">Washington Post:</a> June runoff set for House seat in California once held by Devin Nunes</p>
+                    <p class="text-light"><a href="https://www.usnews.com/news/best-states/california/articles/2022-04-08/democrat-lourin-hubbard-advances-to-runoff-election-in-californias-22nd-congressional-district" class="text-light"  target="_blank">US News:</a> Democrat Lourin Hubbard Advances to Runoff Election in California's 22nd Congressional District</p>
 
                     </div>
                 </div>
@@ -158,7 +160,7 @@
                           + "<div class='col-2'>"
                             + "<span class='material-symbols-outlined icon-size-25 text-secondary'> visibility </span>"
                           + "</div>"
-                          + "<div class='col'> 1200 </div>"
+                          + "<div class='col'> --- </div>"
                         + "</div>"
                         + "<div class ='row'>"
                         + "<div class='col-2'>"
@@ -192,11 +194,21 @@
           $("#accordion").append(new_card)
           }
 
-          $(".a-collapse1").click(function(){ //maybe I should do this for all of the cards?
-            // source: https://stackoverflow.com/questions/19719035/get-a-number-inside-a-div-and-count-plus-one
-            var value = parseInt($(".view-counter").text(), 10) + 1;
-            $(".view-counter").text(value);
-          });
+          /*for(var i = -1; i < 9; i++) { 
+            card_num = i+2
+            card_num_str = String(card_num)
+            collapse_str_id = "#collapse" + card_num_str
+            $(collapse_str_id).click(function(){ //maybe I should do this for all of the cards?
+              // source: https://stackoverflow.com/questions/19719035/get-a-number-inside-a-div-and-count-plus-one
+              var value = parseInt($(".view-counter").text(), 10) + 1;
+              $(".view-counter").text(value);
+            });*/
+          
+            $("#collapse1").click(function(){ //maybe I should do this for all of the cards?
+              // source: https://stackoverflow.com/questions/19719035/get-a-number-inside-a-div-and-count-plus-one
+              var value = parseInt($(".view-counter").text(), 10) + 1;
+              $(".view-counter").text(value);
+            });
 
         }, "json" );
 
