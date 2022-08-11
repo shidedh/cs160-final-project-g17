@@ -1,0 +1,341 @@
+<!-- Referenced: https://www.w3schools.com/html/html_responsive.asp-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1301d25161.js" crossorigin="anonymous"></script>
+
+    <style>
+    .candidate {
+        position: relative;
+        
+    
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(8, 12.5%);
+        justify-items: center;
+        align-items: center;
+        /** place-items: start end; 3.6 */
+  
+    }
+
+    .picture_fr {
+        grid-column: 1 / 2;
+        grid-row: 1 / 9;
+        place-self: end center;
+    }
+    
+    .name_fr {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        place-self: start start;
+    }
+    
+    .party_fr {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        place-self: start start;
+    }
+
+    .career_fr {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+        place-self: start start;
+    }
+
+    .age_fr {
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        place-self: start start;
+    }
+
+    .gender_fr {
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+        place-self: start start;
+    }
+
+
+
+
+
+
+    .second {
+        position: relative;
+        
+    
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(4, 25%);
+        justify-items: center;
+        align-items: center;
+        /** place-items: start end; 3.6 */
+  
+    }
+
+    .profile_fr {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        place-self: start start;
+    }
+
+    .line1_fr {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        place-self: start start;
+    }
+
+    .line2_fr {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        place-self: start start;
+    }
+
+    .third {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(8, 12.5%);
+        grid-template-rows: repeat(8, 12.5%);
+        justify-items: center;
+        align-items: center;
+        /** place-items: start end; 3.6 */
+    }
+
+    .election_fr {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+        place-self: start start;
+    }
+
+    .year_fr {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        place-self: start start;
+    }
+
+    .candidate_des {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+        place-self: start start;
+    }
+
+    .percent_des {
+        grid-column: 6 / 8;
+        grid-row: 4 / 5;
+        place-self: center center;
+    }
+
+    .votes_des {
+        grid-column: 8 / 9;
+        grid-row: 4 / 5;
+        place-self: start start;
+    }
+    </style>
+</head>
+
+<body style="font-family:Verdana;">
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+        <div class="navbar-header input-group">
+            <span class="input-group-text border-0" id="search-addon">
+                <!--i class="fa-solid fa-binoculars fa-2xl"></i-->
+                <i class="fas fa-search fa-2xl"></i>
+            </span>
+            <input type="search" class="form-control border-0 rounded-0" placeholder="" aria-label="Search">
+        </div>
+    </nav>
+
+    <div class="container-fluid", style="background-color:#ffffff">
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                    
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        <a href="/community1" style="color:#3b465dff"> <h4 class="card-title">  </h4> </a>
+                        <p class="card-text">
+                            <ul>
+                                <div class = "candidate">
+                                    <div class="col-lg-6 picture_fr">
+                                        <img class="img-fluid" src="images/candidate.png" width="400">
+                                    </div>
+                                    <div class = "name_fr">
+                                        <h3>Rick Allen</h3>
+                                    </div>
+
+                                    <div class = "party_fr">
+                                        <h6>Party Affiliation: Republican</h6>
+                                    </div>
+
+                                    <div class = "career_fr">
+                                        <h6>Legislative career: Illinois State Senator (2016-2020)</h6>
+                                    </div>
+
+                                    <div class = "age_fr">
+                                        <h6>Age: 46</h6>
+                                    </div>
+
+                                    <div class = "gender_fr">
+                                        <h6>Gender: Male</h6>
+                                    </div>
+                                </div>
+                               
+                        
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                   
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        
+                        <p class="card-text">
+                            <ul>
+                                <div class = "second">
+                                    <div class = "profile_fr">
+                                        <h3>Profile</h3>
+                                    </div>
+
+                                    <div class = "line1_fr">
+                                        <h6>Stevens is an American politician who has served as the U.S. representative 
+                                            for Georgia's 12th congressional district from 2015. </h6>
+                                    </div>
+
+                                    <div class = "line2_fr">
+                                        <h6>He is a member of the Republican Party. In 2022... [expand]</h6>
+                                    </div>
+                                </div>  
+                                
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                   
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        
+                        <p class="card-text">
+                            <ul>
+                                <div class = "third">
+                                    <div class="election_fr">
+                                        <h4>Elections</h4>
+                                    </div>
+
+                                    <div class = "year_fr">
+                                        <h5>2016</h5>
+                                    </div>
+
+                                    <div class = "candidate_des">
+                                        <h8>Candidate</h8>
+                                    </div>
+
+                                    <div class = "percent_des">
+                                        <h8>%</h8>
+                                    </div>
+                                </div>
+                                
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                    
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        <a href="/community1" style="color:#3b465dff"> <h4 class="card-title"> </h4> </a>
+                        <p class="card-text">
+                            <ul>
+                                <div class = "third">
+                                    <div class="election_fr">
+                                        <h4>Elections</h4>
+                                    </div>
+
+                                    <div class = "year_fr">
+                                        <h5>2016</h5>
+                                    </div>
+
+                                    <div class = "candidate_des">
+                                        <h8>Candidate</h8>
+                                    </div>
+
+                                    <div class = "percent_des">
+                                        <h8>%</h8>
+                                    </div>
+                                </div>
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                    <div class="card-header border-0">
+                        <img src="/" alt="" style="height:128px; width:128px;">
+                    </div>
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        <a href="/community1" style="color:#3b465dff"> <h4 class="card-title">  </h4> </a>
+                        <p class="card-text">
+                            <ul>
+                                
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row", style="text-align:center; background-color:#ffffff; padding:7px">
+            <div class=col-md-10">
+                <div class="card flex-row flex-wrap" style="background-color:#bfbfbf">
+                    <div class="card-header border-0">
+                        <img src="/" alt="" style="height:128px; width:128px;">
+                    </div>
+                    <div class="card-block px-2" style="text-align:center; padding: 12px">
+                        <a href="/community1" style="color:#3b465dff"> <h4 class="card-title">  </h4> </a>
+                        <p class="card-text">
+                            <ul>
+                              
+                        </p>
+                    </div>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+    <nav class = "navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+            <div class ="col d-flex justify-content-center">
+                <a href="index.html">Home</a>
+            </div>
+            <div class ="col d-flex justify-content-center border-start">
+                <p> News <p>
+            </div>
+            <div class ="col d-flex justify-content-center border-start">
+                <p> Candidates <p>
+            </div>
+            <div class ="col d-flex justify-content-center border-start">
+                <a href="/community">Community</a>
+            </div>
+        <!--/div-->
+    </nav>
+    </div>
+</body>
+</html>
